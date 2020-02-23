@@ -9,16 +9,20 @@ Example 1:
 Input: `[1,7,4,9,2,5]`
 Output: 6
 Explanation: The entire sequence is a wiggle sequence.
+
 Example 2:
 
 Input: `[1,17,5,10,13,15,10,5,16,8]`
 Output: 7
 Explanation: There are several subsequences that achieve this length. One is `[1,17,10,13,10,16,8]`.
+
 Example 3:
 
 Input: `[1,2,3,4,5,6,7,8,9]`
 Output: 2
+ 
 
+### Solution 1 - Dynamic Programming
 ```java
 public class Solution {
     public int wiggleMaxLength(int[] nums) {
@@ -32,6 +36,28 @@ public class Solution {
                 down = up + 1;
         }
         return Math.max(down, up);
+    }
+}
+```
+
+### Solution 2 - Greedy Approach
+
+
+```java
+public class Solution {
+    public int wiggleMaxLength(int[] nums) {
+        if (nums.length < 2)
+            return nums.length;
+        int prevdiff = nums[1] - nums[0];
+        int count = prevdiff != 0 ? 2 : 1;
+        for (int i = 2; i < nums.length; i++) {
+            int diff = nums[i] - nums[i - 1];
+            if ((diff > 0 && prevdiff <= 0) || (diff < 0 && prevdiff >= 0)) {
+                count++;
+                prevdiff = diff;
+            }
+        }
+        return count;
     }
 }
 ```
