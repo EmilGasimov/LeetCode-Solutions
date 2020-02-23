@@ -19,7 +19,7 @@ Example 3:
 Input: [1,2,3,4,5,6,7,8,9]
 Output: 2
 
-
+```java
 public class Solution {
     public int wiggleMaxLength(int[] nums) {
         if (nums.length < 2)
@@ -34,3 +34,4 @@ public class Solution {
         return Math.max(down, up);
     }
 }
+```
