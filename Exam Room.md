@@ -14,8 +14,8 @@ Output: `[null,0,9,4,2,null,5]`
 
 Explanation:
 
-ExamRoom(10) -> `null`
-seat() -> 0, no one is in the room, then the student sits at seat number 0.
+`ExamRoom(10) -> null`
+`seat() -> 0, no one is in the room, then the student sits at seat number 0.`
 
 seat() -> 9, the student sits at the last seat number 9.
 
