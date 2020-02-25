@@ -31,11 +31,11 @@ Output: 3
 Explanation: B = [4,6,3]
  
 
-###Intuition
+### Intuition
 
 As in Smallest Range I, smaller A[i] will choose to increase their value ("go up"), and bigger A[i] will decrease their value ("go down").
 
-###Algorithm
+### Algorithm
 
 We can formalize the above concept: if A[i] < A[j], we don't need to consider when A[i] goes down while A[j] goes up. This is because the interval (A[i] + K, A[j] - K) is a subset of (A[i] - K, A[j] + K) (here, (a, b) for a > b denotes (b, a) instead.)
 
