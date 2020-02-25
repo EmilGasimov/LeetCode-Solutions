@@ -8,13 +8,13 @@ Return a class `ExamRoom(int N)` that exposes two functions: `ExamRoom.seat()` r
 
 Example 1:
 
-Input: ["ExamRoom","seat","seat","seat","seat","leave","seat"], [[10],[],[],[],[],[4],[]]
+Input: `["ExamRoom","seat","seat","seat","seat","leave","seat"], [[10],[],[],[],[],[4],[]]`
 
-Output: [null,0,9,4,2,null,5]
+Output: `[null,0,9,4,2,null,5]`
 
 Explanation:
 
-ExamRoom(10) -> null
+ExamRoom(10) -> `null`
 seat() -> 0, no one is in the room, then the student sits at seat number 0.
 
 seat() -> 9, the student sits at the last seat number 9.
