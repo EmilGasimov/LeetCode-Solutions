@@ -4,23 +4,22 @@ Given the root of a tree, you are asked to find the most frequent subtree sum. T
 
 Input:
 
-  5
- /  \
-2   -3
+  `5`
+ `/  \`
+`2   -3`
 
-return [2, -3, 4], since all the values happen only once, return all of them in any order.
+return `[2, -3, 4]`, since all the values happen only once, return all of them in any order.
 
 ### Example 2
 
 Input:
 
-  5
- /  \
-2   -5
+  `5`
+ `/  \`
+`2   -5`
 
 return [2], since 2 happens twice, however -5 only occur once.
 
-### Note: You may assume the sum of values in any subtree is in the range of 32-bit signed integer.
 
 ```java
 public class Solution {
